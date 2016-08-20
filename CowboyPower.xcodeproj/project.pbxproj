@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5BE9069A1D5D78D000FC3590 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE906991D5D78D000FC3590 /* AppDelegate.swift */; };
+		5BE9069C1D5D78D000FC3590 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5BE9069B1D5D78D000FC3590 /* GameScene.sks */; };
+		5BE9069E1D5D78D000FC3590 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE9069D1D5D78D000FC3590 /* GameScene.swift */; };
+		5BE906A01D5D78D000FC3590 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE9069F1D5D78D000FC3590 /* GameViewController.swift */; };
+		5BE906A31D5D78D000FC3590 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BE906A11D5D78D000FC3590 /* Main.storyboard */; };
+		5BE906A51D5D78D100FC3590 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BE906A41D5D78D100FC3590 /* Assets.xcassets */; };
+		5BE906A81D5D78D100FC3590 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BE906A61D5D78D100FC3590 /* LaunchScreen.storyboard */; };
+		5BE906B31D5D78D100FC3590 /* CowboyPowerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE906B21D5D78D100FC3590 /* CowboyPowerTests.swift */; };
+		5BE906BE1D5D78D100FC3590 /* CowboyPowerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE906BD1D5D78D100FC3590 /* CowboyPowerUITests.swift */; };
+		5BE906D21D5D929C00FC3590 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BE906D11D5D929C00FC3590 /* Media.xcassets */; };
+		5BFD1EE21D67C87300685AF3 /* cowbell_tip (1).wav in Resources */ = {isa = PBXBuildFile; fileRef = 5BFD1EE11D67C87300685AF3 /* cowbell_tip (1).wav */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5BE906AF1D5D78D100FC3590 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5BE9068E1D5D78D000FC3590 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5BE906951D5D78D000FC3590;
+			remoteInfo = CowboyPower;
+		};
+		5BE906BA1D5D78D100FC3590 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5BE9068E1D5D78D000FC3590 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5BE906951D5D78D000FC3590;
+			remoteInfo = CowboyPower;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5BE906961D5D78D000FC3590 /* CowboyPower.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CowboyPower.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BE906991D5D78D000FC3590 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5BE9069B1D5D78D000FC3590 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		5BE9069D1D5D78D000FC3590 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		5BE9069F1D5D78D000FC3590 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		5BE906A21D5D78D000FC3590 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5BE906A41D5D78D100FC3590 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5BE906A71D5D78D100FC3590 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5BE906A91D5D78D100FC3590 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BE906AE1D5D78D100FC3590 /* CowboyPowerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CowboyPowerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BE906B21D5D78D100FC3590 /* CowboyPowerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CowboyPowerTests.swift; sourceTree = "<group>"; };
+		5BE906B41D5D78D100FC3590 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BE906B91D5D78D100FC3590 /* CowboyPowerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CowboyPowerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BE906BD1D5D78D100FC3590 /* CowboyPowerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CowboyPowerUITests.swift; sourceTree = "<group>"; };
+		5BE906BF1D5D78D100FC3590 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BE906D11D5D929C00FC3590 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Media.xcassets; path = ../../Media.xcassets; sourceTree = "<group>"; };
+		5BFD1EE11D67C87300685AF3 /* cowbell_tip (1).wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "cowbell_tip (1).wav"; path = "../../../Downloads/cowbell_tip (1).wav"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5BE906931D5D78D000FC3590 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BE906AB1D5D78D100FC3590 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BE906B61D5D78D100FC3590 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5BE9068D1D5D78D000FC3590 = {
+			isa = PBXGroup;
+			children = (
+				5BE906981D5D78D000FC3590 /* CowboyPower */,
+				5BE906B11D5D78D100FC3590 /* CowboyPowerTests */,
+				5BE906BC1D5D78D100FC3590 /* CowboyPowerUITests */,
+				5BE906971D5D78D000FC3590 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5BE906971D5D78D000FC3590 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5BE906961D5D78D000FC3590 /* CowboyPower.app */,
+				5BE906AE1D5D78D100FC3590 /* CowboyPowerTests.xctest */,
+				5BE906B91D5D78D100FC3590 /* CowboyPowerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5BE906981D5D78D000FC3590 /* CowboyPower */ = {
+			isa = PBXGroup;
+			children = (
+				5BE906D11D5D929C00FC3590 /* Media.xcassets */,
+				5BE906991D5D78D000FC3590 /* AppDelegate.swift */,
+				5BE9069B1D5D78D000FC3590 /* GameScene.sks */,
+				5BE9069D1D5D78D000FC3590 /* GameScene.swift */,
+				5BFD1EE11D67C87300685AF3 /* cowbell_tip (1).wav */,
+				5BE9069F1D5D78D000FC3590 /* GameViewController.swift */,
+				5BE906A11D5D78D000FC3590 /* Main.storyboard */,
+				5BE906A41D5D78D100FC3590 /* Assets.xcassets */,
+				5BE906A61D5D78D100FC3590 /* LaunchScreen.storyboard */,
+				5BE906A91D5D78D100FC3590 /* Info.plist */,
+			);
+			path = CowboyPower;
+			sourceTree = "<group>";
+		};
+		5BE906B11D5D78D100FC3590 /* CowboyPowerTests */ = {
+			isa = PBXGroup;
+			children = (
+				5BE906B21D5D78D100FC3590 /* CowboyPowerTests.swift */,
+				5BE906B41D5D78D100FC3590 /* Info.plist */,
+			);
+			path = CowboyPowerTests;
+			sourceTree = "<group>";
+		};
+		5BE906BC1D5D78D100FC3590 /* CowboyPowerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5BE906BD1D5D78D100FC3590 /* CowboyPowerUITests.swift */,
+				5BE906BF1D5D78D100FC3590 /* Info.plist */,
+			);
+			path = CowboyPowerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5BE906951D5D78D000FC3590 /* CowboyPower */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BE906C21D5D78D100FC3590 /* Build configuration list for PBXNativeTarget "CowboyPower" */;
+			buildPhases = (
+				5BE906921D5D78D000FC3590 /* Sources */,
+				5BE906931D5D78D000FC3590 /* Frameworks */,
+				5BE906941D5D78D000FC3590 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CowboyPower;
+			productName = CowboyPower;
+			productReference = 5BE906961D5D78D000FC3590 /* CowboyPower.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5BE906AD1D5D78D100FC3590 /* CowboyPowerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BE906C51D5D78D100FC3590 /* Build configuration list for PBXNativeTarget "CowboyPowerTests" */;
+			buildPhases = (
+				5BE906AA1D5D78D100FC3590 /* Sources */,
+				5BE906AB1D5D78D100FC3590 /* Frameworks */,
+				5BE906AC1D5D78D100FC3590 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5BE906B01D5D78D100FC3590 /* PBXTargetDependency */,
+			);
+			name = CowboyPowerTests;
+			productName = CowboyPowerTests;
+			productReference = 5BE906AE1D5D78D100FC3590 /* CowboyPowerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5BE906B81D5D78D100FC3590 /* CowboyPowerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BE906C81D5D78D100FC3590 /* Build configuration list for PBXNativeTarget "CowboyPowerUITests" */;
+			buildPhases = (
+				5BE906B51D5D78D100FC3590 /* Sources */,
+				5BE906B61D5D78D100FC3590 /* Frameworks */,
+				5BE906B71D5D78D100FC3590 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5BE906BB1D5D78D100FC3590 /* PBXTargetDependency */,
+			);
+			name = CowboyPowerUITests;
+			productName = CowboyPowerUITests;
+			productReference = 5BE906B91D5D78D100FC3590 /* CowboyPowerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5BE9068E1D5D78D000FC3590 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Brian Ishii";
+				TargetAttributes = {
+					5BE906951D5D78D000FC3590 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = W42K8U3V83;
+					};
+					5BE906AD1D5D78D100FC3590 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 5BE906951D5D78D000FC3590;
+					};
+					5BE906B81D5D78D100FC3590 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 5BE906951D5D78D000FC3590;
+					};
+				};
+			};
+			buildConfigurationList = 5BE906911D5D78D000FC3590 /* Build configuration list for PBXProject "CowboyPower" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5BE9068D1D5D78D000FC3590;
+			productRefGroup = 5BE906971D5D78D000FC3590 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5BE906951D5D78D000FC3590 /* CowboyPower */,
+				5BE906AD1D5D78D100FC3590 /* CowboyPowerTests */,
+				5BE906B81D5D78D100FC3590 /* CowboyPowerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5BE906941D5D78D000FC3590 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BFD1EE21D67C87300685AF3 /* cowbell_tip (1).wav in Resources */,
+				5BE9069C1D5D78D000FC3590 /* GameScene.sks in Resources */,
+				5BE906A81D5D78D100FC3590 /* LaunchScreen.storyboard in Resources */,
+				5BE906A51D5D78D100FC3590 /* Assets.xcassets in Resources */,
+				5BE906D21D5D929C00FC3590 /* Media.xcassets in Resources */,
+				5BE906A31D5D78D000FC3590 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BE906AC1D5D78D100FC3590 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BE906B71D5D78D100FC3590 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5BE906921D5D78D000FC3590 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BE9069E1D5D78D000FC3590 /* GameScene.swift in Sources */,
+				5BE906A01D5D78D000FC3590 /* GameViewController.swift in Sources */,
+				5BE9069A1D5D78D000FC3590 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BE906AA1D5D78D100FC3590 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BE906B31D5D78D100FC3590 /* CowboyPowerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BE906B51D5D78D100FC3590 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BE906BE1D5D78D100FC3590 /* CowboyPowerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5BE906B01D5D78D100FC3590 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5BE906951D5D78D000FC3590 /* CowboyPower */;
+			targetProxy = 5BE906AF1D5D78D100FC3590 /* PBXContainerItemProxy */;
+		};
+		5BE906BB1D5D78D100FC3590 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5BE906951D5D78D000FC3590 /* CowboyPower */;
+			targetProxy = 5BE906BA1D5D78D100FC3590 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5BE906A11D5D78D000FC3590 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5BE906A21D5D78D000FC3590 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5BE906A61D5D78D100FC3590 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5BE906A71D5D78D100FC3590 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5BE906C01D5D78D100FC3590 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5BE906C11D5D78D100FC3590 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5BE906C31D5D78D100FC3590 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = CowboyPower/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.BrianIshii.CowboyPower;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5BE906C41D5D78D100FC3590 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = CowboyPower/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.BrianIshii.CowboyPower;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5BE906C61D5D78D100FC3590 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = CowboyPowerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = BrianIshii.CowboyPowerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CowboyPower.app/CowboyPower";
+			};
+			name = Debug;
+		};
+		5BE906C71D5D78D100FC3590 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CowboyPowerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = BrianIshii.CowboyPowerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CowboyPower.app/CowboyPower";
+			};
+			name = Release;
+		};
+		5BE906C91D5D78D100FC3590 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = CowboyPowerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = BrianIshii.CowboyPowerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CowboyPower;
+			};
+			name = Debug;
+		};
+		5BE906CA1D5D78D100FC3590 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CowboyPowerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = BrianIshii.CowboyPowerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CowboyPower;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5BE906911D5D78D000FC3590 /* Build configuration list for PBXProject "CowboyPower" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BE906C01D5D78D100FC3590 /* Debug */,
+				5BE906C11D5D78D100FC3590 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5BE906C21D5D78D100FC3590 /* Build configuration list for PBXNativeTarget "CowboyPower" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BE906C31D5D78D100FC3590 /* Debug */,
+				5BE906C41D5D78D100FC3590 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5BE906C51D5D78D100FC3590 /* Build configuration list for PBXNativeTarget "CowboyPowerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BE906C61D5D78D100FC3590 /* Debug */,
+				5BE906C71D5D78D100FC3590 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5BE906C81D5D78D100FC3590 /* Build configuration list for PBXNativeTarget "CowboyPowerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BE906C91D5D78D100FC3590 /* Debug */,
+				5BE906CA1D5D78D100FC3590 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5BE9068E1D5D78D000FC3590 /* Project object */;
+}
