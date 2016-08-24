@@ -8,15 +8,26 @@
 
 import SpriteKit
 import CoreMotion
-import AVFoundation
 import AudioToolbox
 class GameScene: SKScene {
+    var cowboyP = SKSpriteNode()
+    var cowboyY = SKSpriteNode()
     var b = 0
     var soundURL: NSURL?
     var soundID:SystemSoundID = 0
     var y = 1
     let manager = CMMotionManager()
     override func didMoveToView(view: SKView) {
+        cowboyY = SKSpriteNode(imageNamed: "cowboyP")
+        cowboyY.size = CGSize(width: 150, height: 150)
+        cowboyY.position = CGPoint(x: (self.frame.width / 2), y: (self.frame.height/2))
+        addChild(cowboyY)
+        self.cowboyY.hidden = false
+        cowboyP = SKSpriteNode(imageNamed: "cowboyY")
+        cowboyP.size = CGSize(width: 150, height: 150)
+        cowboyP.position = CGPoint(x: (self.frame.width / 2), y: (self.frame.height/2))
+        addChild(cowboyP)
+        self.cowboyP.hidden = true
         self.backgroundColor = SKColor.purpleColor()
         let filePath = NSBundle.mainBundle().pathForResource("cowbell_tip (1)", ofType: "wav")
         soundURL = NSURL(fileURLWithPath: filePath!)
@@ -28,10 +39,14 @@ class GameScene: SKScene {
             print((data?.acceleration.x)!)
             if ((data?.acceleration.x)! > 0){
                 self.backgroundColor = SKColor.purpleColor()
+                self.cowboyY.hidden = false
+                self.cowboyP.hidden = true
                 self.b = 1
             }
             else if ((data?.acceleration.x)! < 0)  {
                 self.backgroundColor = SKColor.yellowColor()
+                self.cowboyY.hidden = true
+                self.cowboyP.hidden = false
                 self.b = 2
             }
             else{
