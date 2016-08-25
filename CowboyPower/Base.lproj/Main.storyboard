@@ -17,24 +17,56 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L8i-UB-UTW">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L8i-UB-UTW">
                                 <rect key="frame" x="482" y="570" width="118" height="30"/>
-                                <state key="normal" title="Sports Schedule ">
+                                <state key="normal" title="Check the Tweets">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="7Nz-nq-qJu" kind="show" id="p9x-hq-SAM"/>
+                                    <action selector="TweetsButtonIsPressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="XWb-Cq-r4E"/>
+                                    <segue destination="0nB-gc-i5k" kind="show" identifier="scheduleScene" id="W2G-vh-eKu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="42J-ew-cTt">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Settings">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="SettingsButtonIsPressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="Blb-Zx-x55"/>
+                                    <segue destination="cBN-rh-1N3" kind="show" identifier="settingsScene" id="cZC-pQ-4Cq"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="qHh-Mt-9TT" firstAttribute="top" secondItem="42J-ew-cTt" secondAttribute="bottom" id="Eld-Bz-7SE"/>
                             <constraint firstItem="qHh-Mt-9TT" firstAttribute="top" secondItem="L8i-UB-UTW" secondAttribute="bottom" id="GHR-uj-Obr"/>
+                            <constraint firstItem="42J-ew-cTt" firstAttribute="leading" secondItem="3se-qz-xqx" secondAttribute="leading" id="ZyF-Q2-aqR"/>
                             <constraint firstAttribute="trailing" secondItem="L8i-UB-UTW" secondAttribute="trailing" id="rla-jv-UHF"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="42J-ew-cTt"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="Eld-Bz-7SE"/>
+                                <exclude reference="ZyF-Q2-aqR"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="42J-ew-cTt"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="Eld-Bz-7SE"/>
+                                <include reference="ZyF-Q2-aqR"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="Xs2-ie-JIz"/>
                     <connections>
+                        <outlet property="SettingsButton" destination="42J-ew-cTt" id="SE9-7i-nXo"/>
                         <outlet property="SportsScheduleButton" destination="L8i-UB-UTW" id="p0a-gp-vZw"/>
                     </connections>
                 </viewController>
@@ -42,75 +74,183 @@
             </objects>
             <point key="canvasLocation" x="342" y="268.5"/>
         </scene>
-        <!--Schedule View Controller-->
-        <scene sceneID="Tcz-QI-yqI">
+        <!--Settings View Controller-->
+        <scene sceneID="sWD-7o-x7X">
             <objects>
-                <viewController id="7Nz-nq-qJu" customClass="ScheduleViewController" customModule="CowboyPower" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="cBN-rh-1N3" customClass="SettingsViewController" customModule="CowboyPower" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="0kF-Ua-Oie"/>
-                        <viewControllerLayoutGuide type="bottom" id="Vrj-xM-Wq6"/>
+                        <viewControllerLayoutGuide type="top" id="BNt-Ik-HuK"/>
+                        <viewControllerLayoutGuide type="bottom" id="36O-GG-MKX"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="79J-Hr-X66">
+                    <view key="view" contentMode="scaleToFill" id="PPj-w8-P2c">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ush-oa-bgC">
-                                <rect key="frame" x="20" y="28" width="32" height="30"/>
-                                <state key="normal" title="EXIT">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Cheers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yNs-PE-IU7">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="152" y="28" width="97" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3fw-UG-gKD">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="179" y="82" width="42" height="21"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="odT-68-xy7">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="299" y="55" width="46" height="30"/>
+                                </variation>
                                 <connections>
-                                    <segue destination="BV1-FR-VrT" kind="show" animates="NO" action="showDetailViewController:sender:" id="LFY-6o-94u"/>
+                                    <action selector="backButtonIsPressed:" destination="cBN-rh-1N3" eventType="touchUpInside" id="RM5-6i-b9c"/>
+                                    <segue destination="BV1-FR-VrT" kind="show" identifier="fromSettingsToGameScene" animates="NO" id="HDs-n5-Lvd"/>
                                 </connections>
                             </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="yNs-PE-IU7"/>
+                                <exclude reference="3fw-UG-gKD"/>
+                                <exclude reference="odT-68-xy7"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="yNs-PE-IU7"/>
+                                <include reference="3fw-UG-gKD"/>
+                                <include reference="odT-68-xy7"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="TotalScoreLabel" destination="3fw-UG-gKD" id="X5E-tI-7qB"/>
+                        <outlet property="backButton" destination="odT-68-xy7" id="Y44-Gi-syX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jdN-iq-pTf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-792" y="322.5"/>
+        </scene>
+        <!--Schedule View Controller-->
+        <scene sceneID="cCK-EP-ClQ">
+            <objects>
+                <tableViewController id="0nB-gc-i5k" customClass="ScheduleViewController" customModule="CowboyPower" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="52" sectionHeaderHeight="28" sectionFooterHeight="28" id="8Cd-GP-ZHb">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <button key="tableHeaderView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="csp-LW-zOu">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                            <state key="normal" title="Exit">
+                                <color key="titleColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="exitButtonIsPressed:" destination="0nB-gc-i5k" eventType="touchUpInside" id="YxM-gr-ah4"/>
+                                <segue destination="BV1-FR-VrT" kind="show" identifier="fromScheduleToGameScene" animates="NO" id="hH7-q4-6gV"/>
+                            </connections>
+                        </button>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="52" id="WXB-57-HC3">
+                                <rect key="frame" x="0.0" y="58" width="600" height="52"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WXB-57-HC3" id="75X-1J-GFU">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="51"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="0nB-gc-i5k" id="f2x-2c-lbh"/>
+                            <outlet property="delegate" destination="0nB-gc-i5k" id="GJz-uZ-SWS"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="exitButton" destination="csp-LW-zOu" id="ira-Cl-6xF"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q37-vM-GMa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1149" y="268.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="OPQ-a3-quz">
+            <objects>
+                <viewController id="oUf-l1-wah" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="K6S-Wc-kBE"/>
+                        <viewControllerLayoutGuide type="bottom" id="IsU-Zi-DNt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="A5S-KZ-FAw">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="80d-1g-LL3">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <mutableString key="text">2016 FOOTBALL                                                                                  DATE	DAY	       OPPONENT	        LOCATION                          19-Aug	Friday	District Jamboree	Rabobank       7:0025-Aug	Thursday	Aptos	                 PIT	               7:302-Sep	Friday	Pioneer	                 Pioneer	       7:009-Sep	Friday	Soledad	                 PIT	               7:3016-Sep	Friday	Milpitas	                 Milpitas	       7:0023-Sep	Friday	Christopher (HC)	PIT	               7:301-Oct	Saturday	North Salinas	        Rabobank	       6:007-Oct	Friday	Palma	                 Rabobank      7:3014-Oct	Friday	Hollister	                 PIT	               7:3021-Oct	Friday	Monte Vista       	MVC	               7:3028-Oct	Friday	Alvarez	                 PIT	               7:30          2016 GIRLS VOLLEYBALL							22-Aug	Monday	Harbor	                 Salinas	       7:00	25-Aug	Thursday	Carmel	                 CSUMB	       6:3030-Aug	Tuesday	Aptos	                 Aptos	       6:30	6-Sep	Tuesday	Presentation	        Salinas	       6:30	8-Sep	Thursday	Santa Catalina	        Salinas	       6:30	13-Sep	Tuesday	Monterey	                Monterey	       6:30	20-Sep	Tuesday	Everett Alvarez        Salinas	       6:30            22-Sep	Thursday	Monta Vista 	        Salinas	       6:30	27-Sep	Tuesday	Hollister	                Hollister	       6:30	29-Sep	Thursday	Notre Dame	        Salinas	       6:30	4-Oct	Tuesday	Christopher	        Christopher    6:30              6-Oct	Thursday	Monterey	                Salinas	       6:30	13-Oct	Thursday	Everett Alvarez         EAHS             6:30             18-Oct	Tuesday	Monta Vista	        MVHS	       6:30	20-Oct	Thursday	Hollister	                Salinas	       6:30	25-Oct	Tuesday	Notre Dame	        ND	               6:30	27-Oct	Thursday	Christopher	        Salinas	       6:30	       </mutableString>
+                                <string key="text">2016 FOOTBALL                                                                                  DATE	DAY	       OPPONENT	        LOCATION                          19-Aug	Friday	District Jamboree	Rabobank       7:00
+25-Aug	Thursday	Aptos	                 PIT	               7:30
+2-Sep	Friday	Pioneer	                 Pioneer	       7:00
+9-Sep	Friday	Soledad	                 PIT	               7:30
+16-Sep	Friday	Milpitas	                 Milpitas	       7:00
+23-Sep	Friday	Christopher (HC)	PIT	               7:30
+1-Oct	Saturday	North Salinas	        Rabobank	       6:00
+7-Oct	Friday	Palma	                 Rabobank      7:30
+14-Oct	Friday	Hollister	                 PIT	               7:30
+21-Oct	Friday	Monte Vista       	MVC	               7:30
+28-Oct	Friday	Alvarez	                 PIT	               7:30          2016 GIRLS VOLLEYBALL							
+22-Aug	Monday	Harbor	                 Salinas	       7:00	
+25-Aug	Thursday	Carmel	                 CSUMB	       6:30
+30-Aug	Tuesday	Aptos	                 Aptos	       6:30	
+6-Sep	Tuesday	Presentation	        Salinas	       6:30	
+8-Sep	Thursday	Santa Catalina	        Salinas	       6:30	
+13-Sep	Tuesday	Monterey	                Monterey	       6:30	
+20-Sep	Tuesday	Everett Alvarez        Salinas	       6:30            22-Sep	Thursday	Monta Vista 	        Salinas	       6:30	
+27-Sep	Tuesday	Hollister	                Hollister	       6:30	
+29-Sep	Thursday	Notre Dame	        Salinas	       6:30	
+4-Oct	Tuesday	Christopher	        Christopher    6:30              6-Oct	Thursday	Monterey	                Salinas	       6:30	
+13-Oct	Thursday	Everett Alvarez         EAHS             6:30             18-Oct	Tuesday	Monta Vista	        MVHS	       6:30	
+20-Oct	Thursday	Hollister	                Salinas	       6:30	
+25-Oct	Tuesday	Notre Dame	        ND	               6:30	
+27-Oct	Thursday	Christopher	        Salinas	       6:30	       </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="-116" y="-12" width="400" height="718"/>
+                                </variation>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="Vrj-xM-Wq6" firstAttribute="top" secondItem="80d-1g-LL3" secondAttribute="bottom" id="DRM-st-SaZ"/>
-                            <constraint firstAttribute="trailing" secondItem="80d-1g-LL3" secondAttribute="trailing" id="Gwg-Df-fzb"/>
-                            <constraint firstItem="80d-1g-LL3" firstAttribute="top" secondItem="Ush-oa-bgC" secondAttribute="bottom" constant="24" id="Hg5-km-gvC"/>
-                            <constraint firstItem="80d-1g-LL3" firstAttribute="leading" secondItem="79J-Hr-X66" secondAttribute="leading" id="MgA-8c-h2a"/>
-                            <constraint firstItem="Ush-oa-bgC" firstAttribute="top" secondItem="0kF-Ua-Oie" secondAttribute="bottom" constant="8" id="qci-MR-DsG"/>
-                            <constraint firstItem="Ush-oa-bgC" firstAttribute="leading" secondItem="79J-Hr-X66" secondAttribute="leading" constant="20" id="xat-fW-D7H"/>
-                        </constraints>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="80d-1g-LL3"/>
-                            </mask>
-                            <mask key="constraints">
-                                <exclude reference="Gwg-Df-fzb"/>
-                                <exclude reference="Hg5-km-gvC"/>
-                                <exclude reference="MgA-8c-h2a"/>
-                                <exclude reference="DRM-st-SaZ"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="80d-1g-LL3"/>
                             </mask>
-                            <mask key="constraints">
-                                <include reference="Gwg-Df-fzb"/>
-                                <include reference="Hg5-km-gvC"/>
-                                <include reference="MgA-8c-h2a"/>
-                                <include reference="DRM-st-SaZ"/>
-                            </mask>
                         </variation>
                     </view>
-                    <connections>
-                        <outlet property="exitButton" destination="Ush-oa-bgC" id="Dt8-gh-yAb"/>
-                        <outlet property="scheduleTextField" destination="80d-1g-LL3" id="Qr4-MN-br1"/>
-                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="aPM-gL-uZM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bpQ-8u-N3O" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1296" y="268.5"/>
+            <point key="canvasLocation" x="1941" y="268.5"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="HDs-n5-Lvd"/>
+    </inferredMetricsTieBreakers>
 </document>

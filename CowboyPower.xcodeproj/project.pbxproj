@@ -8,11 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		5B17C7A31D6BE7DB0031E73A /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B17C7A21D6BE7DB0031E73A /* ScheduleViewController.swift */; };
+		5BC32E4B1D6D34820030A759 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BC32E471D6D34820030A759 /* Fabric.framework */; };
+		5BC32E4C1D6D34820030A759 /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BC32E481D6D34820030A759 /* TwitterKit.framework */; };
+		5BC32E4D1D6D34820030A759 /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5BC32E491D6D34820030A759 /* TwitterKitResources.bundle */; };
+		5BC32E4E1D6D34820030A759 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BC32E4A1D6D34820030A759 /* TwitterCore.framework */; };
+		5BC32E501D6D49270030A759 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC32E4F1D6D49270030A759 /* SettingsViewController.swift */; };
+		5BC32E531D6D67F90030A759 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BC32E511D6D67F90030A759 /* Main.storyboard */; };
+		5BC32E561D6DFB050030A759 /* dataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5BC32E541D6DFB050030A759 /* dataModel.xcdatamodeld */; };
+		5BC32E961D6E06960030A759 /* SettingsEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC32E941D6E06960030A759 /* SettingsEntity+CoreDataProperties.swift */; };
+		5BC32E971D6E06960030A759 /* SettingsEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC32E951D6E06960030A759 /* SettingsEntity.swift */; };
+		5BC32E9B1D6E074B0030A759 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC32E9A1D6E074B0030A759 /* DataController.swift */; };
 		5BE9069A1D5D78D000FC3590 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE906991D5D78D000FC3590 /* AppDelegate.swift */; };
 		5BE9069C1D5D78D000FC3590 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5BE9069B1D5D78D000FC3590 /* GameScene.sks */; };
 		5BE9069E1D5D78D000FC3590 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE9069D1D5D78D000FC3590 /* GameScene.swift */; };
 		5BE906A01D5D78D000FC3590 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE9069F1D5D78D000FC3590 /* GameViewController.swift */; };
-		5BE906A31D5D78D000FC3590 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BE906A11D5D78D000FC3590 /* Main.storyboard */; };
 		5BE906A51D5D78D100FC3590 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BE906A41D5D78D100FC3590 /* Assets.xcassets */; };
 		5BE906A81D5D78D100FC3590 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BE906A61D5D78D100FC3590 /* LaunchScreen.storyboard */; };
 		5BE906B31D5D78D100FC3590 /* CowboyPowerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE906B21D5D78D100FC3590 /* CowboyPowerTests.swift */; };
@@ -40,12 +49,21 @@
 
 /* Begin PBXFileReference section */
 		5B17C7A21D6BE7DB0031E73A /* ScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
+		5BC32E471D6D34820030A759 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = SOURCE_ROOT; };
+		5BC32E481D6D34820030A759 /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = SOURCE_ROOT; };
+		5BC32E491D6D34820030A759 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = SOURCE_ROOT; };
+		5BC32E4A1D6D34820030A759 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = SOURCE_ROOT; };
+		5BC32E4F1D6D49270030A759 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		5BC32E521D6D67F90030A759 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5BC32E551D6DFB050030A759 /* dataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = dataModel.xcdatamodel; sourceTree = "<group>"; };
+		5BC32E941D6E06960030A759 /* SettingsEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SettingsEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		5BC32E951D6E06960030A759 /* SettingsEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsEntity.swift; sourceTree = "<group>"; };
+		5BC32E9A1D6E074B0030A759 /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		5BE906961D5D78D000FC3590 /* CowboyPower.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CowboyPower.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BE906991D5D78D000FC3590 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5BE9069B1D5D78D000FC3590 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		5BE9069D1D5D78D000FC3590 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		5BE9069F1D5D78D000FC3590 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
-		5BE906A21D5D78D000FC3590 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5BE906A41D5D78D100FC3590 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5BE906A71D5D78D100FC3590 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5BE906A91D5D78D100FC3590 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -64,6 +82,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BC32E4B1D6D34820030A759 /* Fabric.framework in Frameworks */,
+				5BC32E4E1D6D34820030A759 /* TwitterCore.framework in Frameworks */,
+				5BC32E4C1D6D34820030A759 /* TwitterKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +108,8 @@
 		5BE9068D1D5D78D000FC3590 = {
 			isa = PBXGroup;
 			children = (
+				5BC32E941D6E06960030A759 /* SettingsEntity+CoreDataProperties.swift */,
+				5BC32E951D6E06960030A759 /* SettingsEntity.swift */,
 				5BE906981D5D78D000FC3590 /* CowboyPower */,
 				5BE906B11D5D78D100FC3590 /* CowboyPowerTests */,
 				5BE906BC1D5D78D100FC3590 /* CowboyPowerUITests */,
@@ -107,17 +130,24 @@
 		5BE906981D5D78D000FC3590 /* CowboyPower */ = {
 			isa = PBXGroup;
 			children = (
+				5BC32E471D6D34820030A759 /* Fabric.framework */,
+				5BC32E481D6D34820030A759 /* TwitterKit.framework */,
+				5BC32E491D6D34820030A759 /* TwitterKitResources.bundle */,
+				5BC32E4A1D6D34820030A759 /* TwitterCore.framework */,
 				5BE906D11D5D929C00FC3590 /* Media.xcassets */,
 				5BE906991D5D78D000FC3590 /* AppDelegate.swift */,
 				5BE9069B1D5D78D000FC3590 /* GameScene.sks */,
 				5BE9069D1D5D78D000FC3590 /* GameScene.swift */,
-				5BFD1EE11D67C87300685AF3 /* cowbell_tip (1).wav */,
 				5BE9069F1D5D78D000FC3590 /* GameViewController.swift */,
+				5BC32E511D6D67F90030A759 /* Main.storyboard */,
+				5BFD1EE11D67C87300685AF3 /* cowbell_tip (1).wav */,
 				5B17C7A21D6BE7DB0031E73A /* ScheduleViewController.swift */,
-				5BE906A11D5D78D000FC3590 /* Main.storyboard */,
+				5BC32E4F1D6D49270030A759 /* SettingsViewController.swift */,
+				5BC32E541D6DFB050030A759 /* dataModel.xcdatamodeld */,
 				5BE906A41D5D78D100FC3590 /* Assets.xcassets */,
 				5BE906A61D5D78D100FC3590 /* LaunchScreen.storyboard */,
 				5BE906A91D5D78D100FC3590 /* Info.plist */,
+				5BC32E9A1D6E074B0030A759 /* DataController.swift */,
 			);
 			path = CowboyPower;
 			sourceTree = "<group>";
@@ -150,6 +180,7 @@
 				5BE906921D5D78D000FC3590 /* Sources */,
 				5BE906931D5D78D000FC3590 /* Frameworks */,
 				5BE906941D5D78D000FC3590 /* Resources */,
+				5BC32E461D6D344A0030A759 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -245,12 +276,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BC32E531D6D67F90030A759 /* Main.storyboard in Resources */,
 				5BFD1EE21D67C87300685AF3 /* cowbell_tip (1).wav in Resources */,
+				5BC32E4D1D6D34820030A759 /* TwitterKitResources.bundle in Resources */,
 				5BE9069C1D5D78D000FC3590 /* GameScene.sks in Resources */,
 				5BE906A81D5D78D100FC3590 /* LaunchScreen.storyboard in Resources */,
 				5BE906A51D5D78D100FC3590 /* Assets.xcassets in Resources */,
 				5BE906D21D5D929C00FC3590 /* Media.xcassets in Resources */,
-				5BE906A31D5D78D000FC3590 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,14 +302,35 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5BC32E461D6D344A0030A759 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 19bdfbe4e1d9d0a95382b136710e1d03658ebf06 240d04474ccd868288c955a44fb3bd46dec4f410bd8733a10d9aa81855931b76";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5BE906921D5D78D000FC3590 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				5BE9069E1D5D78D000FC3590 /* GameScene.swift in Sources */,
+				5BC32E561D6DFB050030A759 /* dataModel.xcdatamodeld in Sources */,
+				5BC32E961D6E06960030A759 /* SettingsEntity+CoreDataProperties.swift in Sources */,
 				5BE906A01D5D78D000FC3590 /* GameViewController.swift in Sources */,
+				5BC32E9B1D6E074B0030A759 /* DataController.swift in Sources */,
 				5BE9069A1D5D78D000FC3590 /* AppDelegate.swift in Sources */,
+				5BC32E971D6E06960030A759 /* SettingsEntity.swift in Sources */,
+				5BC32E501D6D49270030A759 /* SettingsViewController.swift in Sources */,
 				5B17C7A31D6BE7DB0031E73A /* ScheduleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -314,10 +367,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		5BE906A11D5D78D000FC3590 /* Main.storyboard */ = {
+		5BC32E511D6D67F90030A759 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				5BE906A21D5D78D000FC3590 /* Base */,
+				5BC32E521D6D67F90030A759 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -424,6 +477,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = CowboyPower/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.BrianIshii.CowboyPower;
@@ -439,6 +496,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = CowboyPower/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.BrianIshii.CowboyPower;
@@ -536,6 +597,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5BC32E541D6DFB050030A759 /* dataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5BC32E551D6DFB050030A759 /* dataModel.xcdatamodel */,
+			);
+			currentVersion = 5BC32E551D6DFB050030A759 /* dataModel.xcdatamodel */;
+			path = dataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 5BE9068E1D5D78D000FC3590 /* Project object */;
 }

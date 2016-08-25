@@ -7,13 +7,17 @@
 //
 
 import UIKit
+import TwitterKit
 
-class ScheduleViewController: UIViewController {
-
+class ScheduleViewController: TWTRTimelineViewController {
     @IBOutlet weak var exitButton: UIButton!
-    @IBOutlet weak var scheduleTextField: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        let client = TWTRAPIClient()
+        self.dataSource = TWTRUserTimelineDataSource(screenName: "realDonaldTrump", APIClient: client)
+        //self.dataSource = TWTRSearchTimelineDataSource(searchQuery: "#Trump", APIClient: client)
+        TWTRTweetView.appearance().primaryTextColor = UIColor.yellowColor()
+        TWTRTweetView.appearance().backgroundColor = UIColor.purpleColor()
         // Do any additional setup after loading the view.
     }
 
@@ -23,6 +27,10 @@ class ScheduleViewController: UIViewController {
     }
     func textFieldShouldBeginEditing(textField: UITextField) -> Bool {
         return false; //do not show keyboard nor cursor
+    }
+    
+    @IBAction func exitButtonIsPressed(sender: AnyObject) {
+        performSegueWithIdentifier("fromScheduleToGameScene", sender: self)
     }
 
     /*
@@ -34,5 +42,10 @@ class ScheduleViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if (segue.identifier == "fromScheduleToGameScene") {
+        let DestViewController : GameViewController = segue.destinationViewController as! GameViewController
+        }
+    }
 }
+
